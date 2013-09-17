@@ -1,0 +1,18 @@
+/* Picked up from Help search on Key Bindings.  Good stuff -shane */
+/* ~/Library/KeyBindings/DefaultKeyBinding.dict */
+/* Makes osx act a bit more 'emacsey' */
+{
+        "~f"="moveWordForward:";
+        "~b"="moveWordBackward:";
+        "~<"="moveToBeginningOfDocument:";
+        "~>"="moveToEndOfDocument:";
+        "~v"="pageUp:";
+        "~d"="deleteWordForward:";
+        "~^h"="deleteWordBackward:";
+        "~\010"="deleteWordBackward:"; /* Alt-backspace */
+        "~\177"="deleteWordBackward:"; /* Alt-delete */
+
+        /* Escape should really be complete. */
+        "\033"="complete:"; /* Escape */
+}
+
