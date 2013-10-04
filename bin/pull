@@ -1,0 +1,16 @@
+#!/usr/bin/ruby
+# Adds a remote branch to your local repo
+# and checks it out, this is designed
+# to simplify the workflow of code
+# reviewers
+
+if ARGV.size != 2
+  puts "usage: pull repo remote:branch"
+  puts ""
+  puts "sample:"
+  puts "pull deals doyle:feature/new-feature"
+else
+  parts = ARGV[1].split(":")
+  `git fetch #{ENV["GIT_URL"]}:#{parts[0]}/#{ARGV[0]}.git #{parts[1]}:#{parts[1]}`
+  `git checkout #{parts[1]}`
+end
