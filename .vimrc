@@ -4,6 +4,9 @@ set background=dark
 colorscheme cobalt
 if has("gui_running")
   set transparency=15
+
+  " Fix werid crashes
+  set regexpengine=1
 endif
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -13,11 +16,12 @@ set colorcolumn=80
 
 " Make tabs 2 spaces
 set smartindent
+inoremap # X#
 set softtabstop=2
 set shiftwidth=2
 set expandtab
 
-
+" Highlight search results
 set hlsearch
 
 set laststatus=2                             " always show statusbar  

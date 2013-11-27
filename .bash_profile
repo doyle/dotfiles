@@ -8,18 +8,21 @@ alias ls='ls -G'
 # git aliases
 alias gitk='gitk 2>/dev/null'
 alias gb='git branch'
+alias gbr='git branch -r'
 alias gf='git fetch --all --prune'
+alias gr='git rebase origin/master'
 alias gs='git status'
 alias fixup='git commit -a --amend'
 alias m='git checkout master'
-
-source .livingsocial_profile
 
 # rails aliases
 alias sc='script/console'
 alias rc='rails console'
 alias bi='bundle install --local'
 alias bo='EDITOR=mvim bundle open $@'
+
+#path aliases
+alias dev='cd /Users/doyle/Development'
 
 source /usr/local/etc/bash_completion.d/git-completion.bash
 
