@@ -1,4 +1,4 @@
-export PS1='$ '
+export PS1='\[\033[0;32m\]$\[\033[0m\] '
 export EDITOR=vim
 export GREP_OPTIONS='--color=auto' 
 export GREP_COLOR='100;7'
