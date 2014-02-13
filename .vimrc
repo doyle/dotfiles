@@ -24,6 +24,7 @@ set expandtab
 " Highlight search results
 set hlsearch
 
+" Status bar settings
 set laststatus=2                             " always show statusbar  
 set statusline=  
 set statusline+=%-10.3n\                     " buffer number  
@@ -32,3 +33,9 @@ set statusline+=%h%m%r%w                     " status flags
 set statusline+=\[%{strlen(&ft)?&ft:'none'}] " file type  
 set statusline+=%-14(%l,%c%V%)               " line, character  
 set statusline+=%<%P                         " file position
+
+" Disable the highly annoying bell
+set noerrorbells 
+set novisualbell
+set t_vb=
+autocmd! GUIEnter * set vb t_vb=
