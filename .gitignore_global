@@ -1,0 +1,5 @@
+*.swp
+*tags
+*coverage
+vendor/bundle/*
+.byebug_history
