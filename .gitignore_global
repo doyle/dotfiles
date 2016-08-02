@@ -3,3 +3,4 @@
 *coverage
 vendor/bundle/*
 .byebug_history
+.ackrc
