@@ -49,3 +49,4 @@ export NVM_DIR=~/.nvm
 
 # Kit Check specific settings
 source ~/.kit_check_profile
+export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
