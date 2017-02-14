@@ -1,0 +1,5 @@
+[user]
+	email = christian@kitcheck.com
+	name = Christian Doyle
+[core]
+        excludesfile = ~/.gitignore_global
