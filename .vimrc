@@ -10,6 +10,9 @@ if has("gui_running")
 endif
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+set runtimepath^=~/.vim/bundle/tcomment_vim
+
+
 "set number
 set relativenumber
 set cursorline
