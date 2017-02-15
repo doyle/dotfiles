@@ -9,9 +9,10 @@ if has("gui_running")
   set regexpengine=1
 endif
 
+set runtimepath^=~/.vim/bundle/ack.vim
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-set runtimepath^=~/.vim/bundle/tcomment_vim
 set runtimepath^=~/.vim/bundle/nerdtree
+set runtimepath^=~/.vim/bundle/tcomment_vim
 
 "set number
 set relativenumber
