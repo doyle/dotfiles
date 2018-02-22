@@ -2,6 +2,7 @@ export PS1='\[\033[0;32m\]$\[\033[0m\] '
 export EDITOR=vim
 export GREP_OPTIONS='--color=auto' 
 export GREP_COLOR='100;7'
+export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
 
 alias ls='ls -G'
 
