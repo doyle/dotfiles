@@ -1,0 +1,8 @@
+#!/bin/sh
+# pushes the current branch to git hub and opens your browser to the 
+# pull request page for the current branch
+
+OUTPUT=`(git push origin HEAD) 2>&1`
+URL=`echo $OUTPUT | sed -e 's/.*visiting: remote: \(https:\/\/github.com[A-Za-z0-9%\/_-]*\).*/\1/'`
+echo opening $URL
+open $URL
