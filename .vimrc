@@ -3,7 +3,7 @@ set background=dark
 "colorscheme solarized
 colorscheme cobalt
 if has("gui_running")
-  set transparency=15
+  " set transparency=15
 
   " Fix werid crashes
   set regexpengine=1
@@ -45,6 +45,9 @@ set noerrorbells
 set novisualbell
 set t_vb=
 autocmd! GUIEnter * set vb t_vb=
+
+" Turn on spell check in commit messages
+au VimEnter,BufWinEnter,WinEnter *.git/COMMIT* setlocal spell
 
 " Treat .md like .markdown
 au BufRead,BufNewFile *.md set filetype=markdown
