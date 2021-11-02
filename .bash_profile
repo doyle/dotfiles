@@ -21,10 +21,11 @@ alias last='git checkout -'
 
 # rails aliases
 alias sc='script/console'
-alias rc='rails console'
+alias rc='bundle exec rails console'
 alias bi='bundle install --local'
 alias bo='EDITOR=mvim bundle open $@'
 alias rt='bundle exec ruby -Itest $@'
+alias be='bundle exec $@'
 
 #path aliases
 alias dev='cd /Users/doyle/Development'
