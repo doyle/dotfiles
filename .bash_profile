@@ -11,10 +11,12 @@ alias gitk='gitk 2>/dev/null'
 alias gb='git branch'
 alias gbr='git branch -r'
 alias gf='git fetch --all --prune'
-alias gr='git rebase origin/master'
+alias gr='git rebase origin/trunk'
+alias ir='git rebase -i origin/trunk'
 alias gs='git status'
 alias fixup='git commit -a --amend'
 alias m='git checkout master'
+alias t='git checkout trunk'
 alias last='git checkout -'
 
 # rails aliases
