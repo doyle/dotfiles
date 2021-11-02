@@ -32,7 +32,7 @@ alias dev='cd /Users/doyle/Development'
 
 source /usr/local/etc/bash_completion.d/git-completion.bash
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+eval "$(rbenv init -)"
 
 PATH=/usr/local/bin:/usr/local/sbin:$PATH:~/bin
 
