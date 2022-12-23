@@ -30,9 +30,7 @@ alias be='bundle exec $@'
 #path aliases
 alias dev='cd /Users/doyle/Development'
 
-source /usr/local/etc/bash_completion.d/git-completion.bash
-
-eval "$(rbenv init -)"
+source /opt/homebrew/etc/bash_completion.d/git-completion.bash
 
 PATH=/usr/local/bin:/usr/local/sbin:$PATH:~/bin
 
@@ -48,9 +46,6 @@ _git_bd()
   _git_branch
 }
 
-export NVM_DIR=~/.nvm
-  . $(brew --prefix nvm)/nvm.sh
-
-# Kit Check specific settings
-source ~/.kit_check_profile
-export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
+# Set PATH, MANPATH, etc., for Homebrew.
+eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(rbenv init -)"
