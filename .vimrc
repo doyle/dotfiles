@@ -19,6 +19,9 @@ set runtimepath^=~/.vim/bundle/vim-fugitive
 let g:ctrlp_max_files = 0
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
+"open search results and what not in the most recently used split
+set switchbuf+=uselast
+
 "set number
 set relativenumber
 set cursorline
