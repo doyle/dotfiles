@@ -62,7 +62,3 @@ au BufRead,BufNewFile *.md set filetype=markdown
 " Add support for typescript
 set runtimepath^=~/.vim/bundle/typescript-vim
 au BufRead,BufNewFile *.ts set filetype=typescript
-
-autocmd Filetype html setlocal ts=4 sw=4 expandtab
-autocmd Filetype typescript setlocal ts=4 sw=4 expandtab
-
