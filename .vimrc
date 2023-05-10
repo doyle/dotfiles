@@ -2,12 +2,6 @@ syntax enable
 set background=dark
 "colorscheme solarized
 colorscheme cobalt
-if has("gui_running")
-  " set transparency=15
-
-  " Fix werid crashes
-  set regexpengine=1
-endif
 
 set runtimepath^=~/.vim/bundle/ack.vim
 set runtimepath^=~/.vim/bundle/ctrlp.vim
