@@ -52,7 +52,3 @@ au VimEnter,BufWinEnter,WinEnter *.git/COMMIT* setlocal spell
 
 " Treat .md like .markdown
 au BufRead,BufNewFile *.md set filetype=markdown
-
-" Add support for typescript
-set runtimepath^=~/.vim/bundle/typescript-vim
-au BufRead,BufNewFile *.ts set filetype=typescript
