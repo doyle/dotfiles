@@ -1,0 +1,2 @@
+#!/bin/sh
+sqlformat --reindent --keywords upper --identifiers lower $1
