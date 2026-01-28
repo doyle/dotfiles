@@ -1,4 +1,4 @@
-vim.g.mapleader = "<Space>"
+vim.g.mapleader = " "
 
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
@@ -8,7 +8,9 @@ vim.opt.expandtab = true
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 
-vim.api.nvim_set_option("clipboard","unnamed")
+vim.api.nvim_set_option("clipboard", "unnamed")
+
+vim.keymap.set('n', '<leader>cp', ':let @*=expand("%")<CR>', { desc = 'Copy file path' })
 
 require("config.lazy")
 
