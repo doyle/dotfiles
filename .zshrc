@@ -31,3 +31,9 @@ eval "$(/Users/doyle/.local/bin/mise activate zsh)" # added by https://mise.run/
 eval "$(mise activate zsh)"
 
 if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
+export CLAUDE_CODE_USE_BEDROCK=1
+export AWS_PROFILE=aha_staging
+export AWS_REGION=us-east-1
+export ANTHROPIC_DEFAULT_OPUS_MODEL=us.anthropic.claude-opus-4-8
+export ANTHROPIC_DEFAULT_SONNET_MODEL=us.anthropic.claude-sonnet-4-6
+export ANTHROPIC_DEFAULT_HAIKU_MODEL=us.anthropic.claude-haiku-4-5-20251001-v1:0
